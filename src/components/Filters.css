@@ -1,0 +1,108 @@
+.filter-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.status-filters {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.filter-btn {
+    padding: 0.5rem 1rem;
+    border-radius: var(--border-radius-sm);
+    background-color: transparent;
+    color: var(--color-text-secondary);
+    font-size: 0.875rem;
+    font-weight: 500;
+    transition: all var(--transition-fast);
+}
+
+.filter-btn:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 2px var(--color-bg-base), 0 0 0 4px var(--color-accent-primary);
+}
+
+.filter-btn:hover {
+    background-color: var(--color-bg-surface-elevated);
+    color: var(--color-text-primary);
+}
+
+.filter-btn.active {
+    background-color: var(--color-accent-primary);
+    color: white;
+}
+
+.category-filter-wrapper {
+    position: relative;
+}
+
+.category-filter-select {
+    appearance: none;
+    background-color: var(--color-bg-surface);
+    border: 1px solid var(--color-bg-surface-elevated);
+    color: var(--color-text-secondary);
+    border-radius: var(--border-radius-sm);
+    padding: 0.5rem 2rem 0.5rem 1rem;
+    font-family: inherit;
+    font-size: 0.875rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all var(--transition-fast);
+}
+
+.category-filter-select:hover {
+    border-color: var(--color-text-muted);
+}
+
+.category-filter-select:focus-visible,
+.category-filter-select:focus {
+    outline: none;
+    border-color: var(--color-accent-primary);
+    box-shadow: 0 0 0 2px rgba(139, 92, 246, 0.2);
+}
+
+.category-filter-wrapper::after {
+    content: "▼";
+    font-size: 0.6rem;
+    position: absolute;
+    right: 0.75rem;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: var(--color-text-muted);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 640px) {
+    .filter-container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .status-filters {
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .filter-btn {
+        flex: 1;
+        text-align: center;
+        padding: 0.75rem 0.5rem;
+        /* Better touch height */
+    }
+
+    .category-filter-wrapper {
+        width: 100%;
+    }
+
+    .category-filter-select {
+        width: 100%;
+        padding-top: 0.75rem;
+        padding-bottom: 0.75rem;
+    }
+}
