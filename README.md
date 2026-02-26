@@ -29,7 +29,7 @@ The **Personal Productivity App** is a beautifully designed, mobile-first web ap
 
 | Light Mode | Dark Mode | Mobile View |
 |:---:|:---:|:---:|
-| ![Light Mode](images/Screenshot 2026-02-26 115407.png) | ![Dark Mode Screenshot](images/Screenshot 2026-02-26 115419.png) | ![Mobile View Screenshot](images/Screenshot 2026-02-26 115539.png) |
+| ![Light Mode](images/light-mode-pc.png) | ![Dark Mode Screenshot](images/dark-mode-pc.png) | ![Mobile View Screenshot](images/light-mode-mobile.png) |
 
 ---
 
