@@ -21,7 +21,7 @@ The **Personal Productivity App** is a beautifully designed, mobile-first web ap
 ---
 
 ## 🔗 Live Demo
-[View Live Application](#) *(Placeholder Link)*
+[View Live Application](#) *[(Placeholder Link)](https://productivity-app-adwo.vercel.app/)*
 
 ---
 
@@ -124,5 +124,5 @@ productivity-app/
 ---
 
 <p align="center">
-  <i>Built with ❤️ by an enthusiastic developer.</i>
+  <i>Built with ❤️ by Manav Garg.</i>
 </p>
